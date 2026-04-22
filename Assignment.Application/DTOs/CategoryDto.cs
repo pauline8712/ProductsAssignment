@@ -1,18 +1,14 @@
-﻿using AutoMapper;
-using Assignment.Application.DTOs;
-using Assignment.Domain.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Assignment.Application.Mappings
+namespace Assignment.Application.DTOs
 {
-    public class MappingProfile : Profile
+    public class CategoryDto
     {
-        public MappingProfile()
-        {
-            CreateMap<Product, ProductDto>()
-                .ForMember(dest => dest.CategoryName,
-                    opt => opt.MapFrom(src => src.Category.Name));
-
-            CreateMap<Category, CategoryDto>();
-        }
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }
