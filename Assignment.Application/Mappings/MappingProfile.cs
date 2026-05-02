@@ -4,6 +4,9 @@ using Assignment.Domain.Entities;
 
 namespace Assignment.Application.Mappings
 {
+
+    //Det är som en instruktionsbok som berättar för AutoMapper hur den ska
+    //omvandla entiteter till DTOs. 
     public class MappingProfile : Profile
     {
         public MappingProfile()
