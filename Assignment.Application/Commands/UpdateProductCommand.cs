@@ -2,7 +2,10 @@
 
 namespace Assignment.Application.Features.Products.Commands
 {
-        public class UpdateProductCommand : IRequest<bool>
+
+    //IRequest<bool> istället för IRequest<ProductDto> — vid uppdatering returnerar vi bara true eller false om det lyckades, inte hela produkten
+    //Id är med — vi behöver veta vilken produkt som ska uppdateras
+    public class UpdateProductCommand : IRequest<bool>
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
