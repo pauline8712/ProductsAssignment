@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Interfaces;
-using Assignment.Application.Feature.Products.Commands;
 
 //Hämtar produkten via GetByIdAsync — kollar att den faktiskt finns
 //Finns den inte? → returnerar false

@@ -3,7 +3,6 @@ using MediatR;
 using Assignment.Application.DTOs;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Interfaces;
-using Assignment.Application.Commands;
 
 namespace Assignment.Application.Features.Products.Commands
 {
