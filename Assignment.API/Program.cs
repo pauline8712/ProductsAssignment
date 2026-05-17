@@ -17,7 +17,8 @@ builder.Services.AddMediatR(cfg =>
         typeof(Assignment.Application.Features.Products.Commands.CreateProductCommand).Assembly));
 
 // AutoMapper
-builder.Services.AddAutoMapper(typeof(Assignment.Application.Mappings.MappingProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(Assignment.Application.Mappings.MappingProfile));
+
 var app = builder.Build();
 
 // Configure pipeline

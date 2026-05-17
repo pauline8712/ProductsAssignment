@@ -22,17 +22,15 @@ namespace Assignment.Application.Features.Products.Commands
             var product = await _repository.GetByIdAsync(request.Id);
 
             if (product == null)
-            {
                 return false;
 
-                product.Name = request.Name;
-                product.Price = request.Price;
-                product.CategoryId = request.CategoryId;
+            product.Name = request.Name;
+            product.Price = request.Price;
+            product.CategoryId = request.CategoryId;
 
-                await _repository.UpdateAsync(product);
+            await _repository.UpdateAsync(product);
 
-                return true;
-            }
+            return true;
         }
     }
 }

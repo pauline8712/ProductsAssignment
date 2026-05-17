@@ -19,7 +19,7 @@ namespace Assignment.Application.Features.Products.Commands
 
         public async Task<ProductDto> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var product = new Product()
+            var product = new Product
             {
                 Name = request.Name,
                 Price = request.Price,
@@ -27,6 +27,7 @@ namespace Assignment.Application.Features.Products.Commands
             };
 
             await _repository.AddAsync(product);
+
             return _mapper.Map<ProductDto>(product);
         }
     }
