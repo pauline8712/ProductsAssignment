@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Interfaces;
-using Assignment.Infrastructure.Database;
+using Assignment.Infrastructure.Data;
 using Assignment.Infrastructure.Repositories;
 
 namespace Assignment.Infrastructure
